@@ -96,6 +96,7 @@ public class Maze implements Serializable {
 				for (char c : row.chars().mapToObj(e -> (char) e).collect(Collectors.toList())) {
 					rowTiles.add(Tile.fromChar(c));
 				}
+				tiles.add(rowTiles);
 			}
 
 		} catch (MalformedInputException e) {
